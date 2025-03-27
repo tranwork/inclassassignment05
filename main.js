@@ -12,4 +12,8 @@ function displayPosts() {
       });
     })
     .catch(err => {
-      container.innerHTML = `<p style="color:red
+      container.innerHTML = `<p style="color:red;">Failed to load posts:
+      ${err.message}</p>:
+      });
+    }
+    displayPosts():
