@@ -2,7 +2,7 @@ import { getPosts } from './api.js';
 
 function displayPosts() {
   const container = document.getElementById('postContainer');
-
+  
   getPosts()
     .then(posts => {
       posts.slice(0, 5).forEach(post => {
@@ -17,4 +17,3 @@ function displayPosts() {
 }
 
 displayPosts();
-
